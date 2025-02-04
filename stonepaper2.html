@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonepaperscissor2</title>
+    <style>
+    body{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="div1">
+    <h1>Stone Paper Scissor 2</h1>
+    <button id="button1" class="button" onclick="let computer1=randomNumber();
+    if(computer1==='stone'){
+        alert('both chose stone so tie');
+        score.tie+=1;
+    }
+    else if(computer1==='scissor'){
+        alert('user chose stone and computer chose scissor so user wins');
+        score.win+=1;
+    }
+    else{
+        alert('user chose stone and computer chose paper so computer wins');
+        score.lose+=1;
+    }
+    ">Stone</button>
+    <button id="button2" class="button" onclick="let computer2=randomNumber();
+    if(computer2==='stone'){
+        alert('user chose paper and computer chose stone so user wins');
+        score.win+=1;
+    }
+    else if(computer2==='paper'){
+        alert('both chose paperso tie');
+        score.tie+=1;
+    }
+    else{
+        alert('user chose paper and computer chose scissor so computer wins');
+        score.lose+=1;
+    }
+    ">Paper</button>
+    <button id="button3" class="button" onclick="let computer3=randomNumber();
+    if(computer3==='stone'){
+        alert('user chose scissor and computer chose stone so computer wins');
+        score.lose+=1;
+    }
+    else if(computer3==='paper'){
+        alert('user chose scissor and computer chose paper so user wins');
+        score.win+=1;
+    }
+    else{
+        alert('both chose scissor so tie');
+        score.tie+=1;
+    }
+    
+    ">Scissor</button>
+    <button id="button4" class="button" onclick="showscore()">Score</button>
+    <script src="stonepaper2.js"></script>
+</div>
+</body>
+</html>
